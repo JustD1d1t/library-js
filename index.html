@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script defer src="./index.js"></script>
+    <script defer src="./addBooks.js"></script>
+    <script defer src="./handleBooks.js"></script>
+    <script defer src="./handleVisibleSection.js"></script>
+  </head>
+  <body>
+    <section class="library">
+      <select name="library" id="library">
+        <option value="">Czego szukasz</option>
+        <option value="all">Wszystkie książki</option>
+        <option value="available">Dostępne książki</option>
+        <option value="borrowed">Wypożyczone książki</option>
+      </select>
+      <div class="library__all-books-container library-section">
+        <h3>Książki w bibliotece</h3>
+        <div class="library__all-books"></div>
+      </div>
+      <div class="library__available-books-container library-section">
+        <h3>Książki dostępne w bibliotece</h3>
+        <div class="library__available-books">
+          <h4 class="library__no-records">Brak książek w biliotece</h4>
+        </div>
+      </div>
+      <div class="library__borrowed-books-container library-section">
+        <h3>Książki które wypożyczyłeś z biblioteki</h3>
+        <div class="library__borrowed-books">
+          <h4 class="library__no-records">Nie masz wypożyczonych książek</h4>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
