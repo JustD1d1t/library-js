@@ -62,14 +62,14 @@ const allBooksInLibrary = document.querySelector(".library__all-books");
 books.forEach((book) => {
   const newBook = document.createElement("div");
   newBook.classList.add("library__book");
-  const template = `<div class="library__book-details"><h5 class="library__book-title">Tytuł: ${book.title}</h5><h5 class="library__book-author">Autor: ${book.author}</h5></div><p class="library__book-description clamp-3">${book.description}</p>`;
+  const template = `<div class="library__book-details"><h4 class="library__book-title">Tytuł: ${book.title}</h4><h4 class="library__book-author">Autor: ${book.author}</h4></div><p class="library__book-description clamp-3">${book.description}</p>`;
   newBook.innerHTML = template;
   addBooksToLibrary(newBook);
 });
 books.forEach((book) => {
   const newBook = document.createElement("div");
   newBook.classList.add("library__book");
-  const template = `<div class="library__book-details"><h5 class="library__book-title">Tytuł: ${book.title}</h5><h5 class="library__book-author">Autor: ${book.author}</h5></div><p class="library__book-description clamp-3">${book.description}</p> <button class="borrow-book">Wypożycz książkę</button>`;
+  const template = `<div class="library__book-details"><h4 class="library__book-title">Tytuł: ${book.title}</h4><h4 class="library__book-author">Autor: ${book.author}</h4></div><p class="library__book-description clamp-3">${book.description}</p> <button class="borrow-book">Wypożycz książkę</button>`;
   newBook.innerHTML = template;
   addBooksToAvailable(newBook);
 });
