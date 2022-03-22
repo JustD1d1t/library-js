@@ -8,32 +8,31 @@
     <link href="./style.css" rel="stylesheet" />
     <script defer src="./index.js"></script>
     <script defer src="./addBooks.js"></script>
-    <script defer src="./handleBooks.js"></script>
+    <script defer src="./handleUser.js"></script>
     <script defer src="./handleVisibleSection.js"></script>
   </head>
   <body>
     <section class="library">
-      <select name="library" id="library">
-        <option value="">Czego szukasz</option>
-        <option value="all">Wszystkie książki</option>
-        <option value="available">Dostępne książki</option>
-        <option value="borrowed">Wypożyczone książki</option>
-      </select>
-      <div class="library__all-books-container library-section">
-        <h3>Książki w bibliotece</h3>
-        <div class="library__all-books"></div>
+      <div class="library__header">
+        <form id="section-form">
+          <select name="library" id="library">
+            <option value="">Czego szukasz</option>
+            <option value="all">Wszystkie książki</option>
+            <option value="available">Dostępne książki</option>
+          </select>
+          <button type="submit">Wybierz</button>
+        </form>
+        <form id="login-form">
+          <label>E-mail <input type="email" id="email" /></label>
+          <label>Hasło <input type="password" id="password" /></label>
+          <button type="submit">Zaloguj</button>
+        </form>
+        <form id="logout-form" class="hide-form">
+          <button type="submit">Wyloguj</button>
+        </form>
       </div>
-      <div class="library__available-books-container library-section">
-        <h3>Książki dostępne w bibliotece</h3>
-        <div class="library__available-books">
-          <h4 class="library__no-records">Brak książek w biliotece</h4>
-        </div>
-      </div>
-      <div class="library__borrowed-books-container library-section">
-        <h3>Książki które wypożyczyłeś z biblioteki</h3>
-        <div class="library__borrowed-books">
-          <h4 class="library__no-records">Nie masz wypożyczonych książek</h4>
-        </div>
+      <div class="library__books-container library-section">
+        <div class="library__books"></div>
       </div>
     </section>
   </body>

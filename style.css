@@ -19,6 +19,11 @@
   flex-wrap: wrap;
   gap: 10px;
 }
+.library__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 .library-section {
   display: flex;
   flex-direction: column;
@@ -52,9 +57,7 @@
     max-width: 50%;
   }
 }
-.library__available-books,
-.library__borrowed-books,
-.library__all-books {
+.library__books {
   overflow: auto;
   padding: 1rem 1rem 0 0;
   margin-top: 0.5rem;
@@ -98,4 +101,7 @@
 .borrow-book:hover,
 .return-book:hover {
   background: #a3a3a3;
+}
+.hide-form {
+  display: none;
 }
